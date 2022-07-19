@@ -8,8 +8,7 @@ export default function addToList() {
   messageBox.style.display = 'none';
 
   addIcon.addEventListener('click', () => {
-    let toDos;
-    toDos = getStorage();
+    const toDos = getStorage();
     if (taskInput.value !== '') {
       const newTask = new Task(taskInput.value);
       toDos.push(newTask);
