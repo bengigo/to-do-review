@@ -1,6 +1,8 @@
+import getStorage from './storage.js';
+
 export default function displayList() {
   const listContainer = document.querySelector('#list');
-  const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+  const toDos = getStorage();
   if (toDos.length > 0) {
     toDos.forEach((task) => {
       if (task.completed === false) {

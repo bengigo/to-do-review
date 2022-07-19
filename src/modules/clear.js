@@ -1,10 +1,13 @@
+import getStorage from './storage.js';
+
 export default function clearCompleted() {
   const clearButton = document.querySelector('#clear');
 
   clearButton.addEventListener('click', (e) => {
     e.preventDefault();
 
-    let toDos = [];
+    let toDos;
+    toDos = getStorage();
     toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
     toDos = toDos.filter((task) => task.completed !== true);
 

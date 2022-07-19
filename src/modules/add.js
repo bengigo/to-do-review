@@ -1,5 +1,5 @@
 import Task from "./taskClass.js";
-import { getStorage, setStorage } from "./storage.js";
+import getStorage from "./storage.js";
 
 export default function addToList() {
   const taskInput = document.querySelector("#task-input");
@@ -8,23 +8,17 @@ export default function addToList() {
   messageBox.style.display = "none";
 
   addIcon.addEventListener("click", () => {
-    // let toDos = [];
     let toDos;
-    // toDos = JSON.parse(localStorage.getItem("toDos") || "[]");
-    // get storage function
     toDos = getStorage();
     if (taskInput.value !== "") {
       const newTask = new Task(taskInput.value);
       toDos.push(newTask);
-      console.log(toDos);
       toDos.forEach((obj, i) => {
         obj.index = i + 1;
       });
       localStorage.setItem("toDos", JSON.stringify(toDos));
-      // set storage function
-      setStorage();
       taskInput.value = "";
-      // window.location.reload();
+      window.location.reload();
     } else {
       messageBox.style.display = "flex";
       messageBox.innerText = "You didn't write anything!";
