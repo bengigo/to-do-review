@@ -3,7 +3,8 @@ import addToList from './modules/add.js';
 import displayList from './modules/displayList.js';
 import deleteFromList from './modules/delete.js';
 import editTest from './modules/editTask.js';
-import { check, uncheck } from './modules/interactions';
+import interactions from './modules/interactions';
+// import { check,uncheck } from './modules/interactions.js';
 import clearCompleted from './modules/clear.js';
 
 addToList();
@@ -14,8 +15,6 @@ deleteFromList();
 
 editTest();
 
-check();
-
-uncheck();
+interactions()
 
 clearCompleted();

@@ -1,7 +1,7 @@
 import displayList from '../displayList.js';
 import Task from '../taskClass.js';
 
-export  function addToList() {
+export default function addToList() {
     const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
     let taskInput = 'test new file'
     const newTask = new Task(taskInput);
