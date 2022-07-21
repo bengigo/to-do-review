@@ -14,3 +14,5 @@ export default function deleteFromList() {
     });
   });
 }
+
+export const removeToList = (list) => list.filter((todo) => todo.completed === false);

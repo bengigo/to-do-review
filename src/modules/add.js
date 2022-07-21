@@ -5,8 +5,11 @@ export default function addToList() {
   const taskInput = document.querySelector('#task-input');
   const addIcon = document.querySelector('#add');
   const messageBox = document.querySelector('#message-display');
-  messageBox.style.display = 'none';
+  if(messageBox) {
+    messageBox.style.display = 'none';
+  }
 
+ if (addIcon) {
   addIcon.addEventListener('click', () => {
     const toDos = getStorage();
     if (taskInput.value !== '') {
@@ -24,4 +27,6 @@ export default function addToList() {
       messageBox.style.color = 'tomato';
     }
   });
+
+ }
 }
