@@ -11,11 +11,9 @@ export  function addToList() {
 
 };
 
-export function removeFromList() {
-    const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
-    toDos = toDos.filter((task) => task.id !== e.target.id);
-    localStorage.setItem('toDos', JSON.stringify(toDos));
-
+export function removeFromList(task) {
+    let toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+    displayList();
 
 }
 

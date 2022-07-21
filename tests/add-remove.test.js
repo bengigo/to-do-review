@@ -32,7 +32,6 @@ test("remove a task from list", () => {
   addToList();
 
   let toDos = JSON.parse(localStorage.getItem("tasks"));
-
   displayList();
 
   let list = document.querySelectorAll("#list li");
@@ -41,7 +40,6 @@ test("remove a task from list", () => {
   removeFromList({index: 1});
   toDos = JSON.parse(localStorage.getItem("tasks"));
   displayList();
-  list = document.querySelectorAll("#list li");
   expect(list).toHaveLength(initialLength - 1);
 
 });

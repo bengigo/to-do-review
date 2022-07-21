@@ -1,9 +1,9 @@
-import getStorage from './storage.js';
+import getStorage from "./storage.js";
 
-export default function interactions() {
+export function check() {
   const checkboxes = document.querySelectorAll('.checkbox');
   checkboxes.forEach((box) => {
-    box.addEventListener('change', (e) => {
+    box.addEventListener('click', (e) => {
       let toDos = [];
       toDos = getStorage();
 
@@ -17,3 +17,14 @@ export default function interactions() {
     });
   });
 }
+
+export function uncheck() {
+  const checkboxes = document.querySelectorAll('.checkbox');
+  checkboxes.forEach((box) => {
+    box.addEventListener('')
+  })
+}
+
+module.exports = {
+  check, uncheck,
+};
