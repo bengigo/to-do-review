@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658403777264" clover="3.2.0">
-  <project timestamp="1658403777264" name="All files">
+<coverage generated="1658403138006" clover="3.2.0">
+  <project timestamp="1658403138006" name="All files">
     <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4" elements="24" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="1" files="4" classes="4"/>
     <file name="displayList.js" path="/Users/bengi/Desktop/microverse-program/2nd-module/to-do-review/src/modules/displayList.js">
       <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
