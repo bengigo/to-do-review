@@ -1,5 +1,6 @@
 import Task from './taskClass.js';
 import getStorage from './storage.js';
+import toDos from './toDos.js';
 
 export default function addToList() {
   const taskInput = document.querySelector('#task-input');
@@ -24,4 +25,5 @@ export default function addToList() {
       messageBox.style.color = 'tomato';
     }
   });
+  // return toDos;
 }
