@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for add.js</title>
+    <title>Code coverage report for interactions.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> add.js</h1>
+        <h1><a href="index.html">All files</a> interactions.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/16</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/3</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/16</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -84,25 +84,9 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -113,42 +97,34 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Task from './taskClass.js';
-import getStorage from './storage.js';
-import toDos from './toDos.js';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import getStorage from "./storage.js";
 &nbsp;
-export default function addToList() {
-  const taskInput = document.querySelector('#task-input');
-  const addIcon = document.querySelector('#add');
-  const messageBox = document.querySelector('#message-display');
-  // messageBox.style.display = 'none';
+export default function <span class="fstat-no" title="function not covered" >interactions(</span>) {
+  const checkboxes = <span class="cstat-no" title="statement not covered" >document.querySelectorAll(".checkbox");</span>
+<span class="cstat-no" title="statement not covered" >  checkboxes.forEach(<span class="fstat-no" title="function not covered" >(b</span>ox) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    box.addEventListener("click", <span class="fstat-no" title="function not covered" >(e</span>) =&gt; {</span>
+      let toDos = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >      toDos = getStorage();</span>
+<span class="cstat-no" title="statement not covered" >      console.log(e.target.checked);</span>
 &nbsp;
-  addIcon.addEventListener('click', <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-    const toDos = <span class="cstat-no" title="statement not covered" >getStorage();</span>
-<span class="cstat-no" title="statement not covered" >    if (taskInput.value !== '') {</span>
-      const newTask = <span class="cstat-no" title="statement not covered" >new Task(taskInput.value);</span>
-<span class="cstat-no" title="statement not covered" >      toDos.push(newTask);</span>
-<span class="cstat-no" title="statement not covered" >      toDos.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj, i) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        obj.index = i + 1;</span>
-      });
-<span class="cstat-no" title="statement not covered" >      localStorage.setItem('toDos', JSON.stringify(toDos));</span>
-<span class="cstat-no" title="statement not covered" >      taskInput.value = '';</span>
-<span class="cstat-no" title="statement not covered" >      window.location.reload();</span>
-    } else {
-<span class="cstat-no" title="statement not covered" >      messageBox.style.display = 'flex';</span>
-<span class="cstat-no" title="statement not covered" >      messageBox.innerText = "You didn't write anything!";</span>
-<span class="cstat-no" title="statement not covered" >      messageBox.style.color = 'tomato';</span>
-    }
+<span class="cstat-no" title="statement not covered" >      if ((e.target.checked = true)) {</span>
+<span class="cstat-no" title="statement not covered" >        toDos.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          if (e.target.classList.contains(obj.index)) {</span>
+<span class="cstat-no" title="statement not covered" >            obj.completed = true;</span>
+<span class="cstat-no" title="statement not covered" >            localStorage.setItem("toDos", JSON.stringify(toDos));</span>
+          }
+        });
+      }
+    });
   });
-  // return toDos;
 }
 &nbsp;</pre></td></tr></table></pre>
 
