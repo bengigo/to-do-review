@@ -2,7 +2,8 @@
 
 # ToDo List
 
-> A minimal list app to keep track of simple tasks.
+> A minimal list app to keep track of simple tasks.This is the app where anyone can add their daily actions to do them.
+> This is one of the simple apps that can be used by anyone. 
 
 
 ## Built With
@@ -11,6 +12,7 @@
 - CSS
 - JAVASCRIPT
 - WEBPACK
+- Jest Framework
 
 ## Live Demo
 
@@ -34,6 +36,27 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bengi-g-03b883199/)
 
 ## 🤝 Contributing
+
+## 👤 Contributors
+
+- GitHub: [@githubhandle](https://github.com/bengigo)
+- Twitter: [@twitterhandle](https://twitter.com/bengi_gb)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bengi-g-03b883199/)
+
+👤 **Esmatullah Ahmadzai (Esmat)**
+
+- GitHub: [@Esmatullah Ahamdzai](https://github.com/eaesmat)
+- Twitter: [@Esmatullah Ahamdzai](https://twitter.com/ea_ahmadzai)
+- LinkedIn: [@Esmatullah Ahamdzai](https://www.linkedin.com/in/esmatullah-ahmadzai-589523230/)
+
+👤 **Nonhlanhla** 
+- GitHub: [@29td](https://github.com/githubhandle) 
+- Twitter: [@NonhlanhlaMnde6](https://twitter.com/twitterhandle) 
+- LinkedIn: [LinkedIn](https://linkedin.com/in/nonhlanhla-mndebele-ab7448226) 
+
+
+
+
 
 Contributions, issues, and feature requests are welcome!
 

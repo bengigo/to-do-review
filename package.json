@@ -6,7 +6,7 @@
   "bail": 1,
   "verbose": true,
   "scripts": {
-    "test": "jest --coverage --env=jsdom",
+    "test": "jest --env=jsdom",
     "start": "webpack serve --open",
     "build": "webpack"
   },
