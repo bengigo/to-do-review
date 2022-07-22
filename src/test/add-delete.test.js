@@ -2,7 +2,9 @@
  * @jest-environment jsdom
  */
 
-import { addToList, deleteToList, removeToList } from './task.js';
+import {
+  addToList, deleteToList, removeToList, updateToList,
+} from './task.js';
 
 // testing the add function
 describe('Add a new task to the list', () => {
@@ -67,5 +69,21 @@ describe('Clear completed tasks', () => {
     ];
 
     expect(removeToList(task));
+  });
+});
+
+// show if the task is completed
+
+describe('edit_status_tasks', () => {
+  test('edit_completed_status_ToList', () => {
+    expect(updateToList(0, 'test', true).completed).toBe(true);
+  });
+});
+
+// to edit tasks description
+
+describe('edit_description_tasks', () => {
+  test('edit_description_ToList', () => {
+    expect(updateToList(0, 'Cooking', true).description).toBe('Cooking');
   });
 });

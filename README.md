@@ -18,6 +18,16 @@
 
 [Live Demo Link](https://bengigo.github.io/to-do-list/).
 
+## Required Tools
+
+- Jest Framework: npm install --save-dev jest
+- npm install jest-environment-jsdom
+
+## Run
+
+> Run the command to check the Jest is working or not.
+- Use: npm test
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
