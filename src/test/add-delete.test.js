@@ -46,3 +46,28 @@ describe('Add a new task to the list', () => {
 
 });
 
+// test the remove task
+
+describe('Clear completed tasks', () => {
+    test('clear completed list', () => {
+        const task = [
+            {
+                description: 'firstTask',
+                completed: false,
+                index: 0,    
+            },
+            {
+                description: 'secondTask',
+                completed: false,
+                index: 1,  
+            },
+            {
+                description: 'thirdTask',
+                completed: false,
+                index: 2,  
+            },
+        ];
+
+        expect(removeToList(task));
+    });  
+});
