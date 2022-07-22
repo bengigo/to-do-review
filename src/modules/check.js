@@ -1,17 +1,20 @@
-import getStorage from "./storage.js";
+// import getStorage from "./storage";
+import toDos from "./toDos";
 
-export default function interactions() {
+export function check() {
   const checkboxes = document.querySelectorAll(".checkbox");
+
   checkboxes.forEach((box) => {
     box.addEventListener("click", (e) => {
-      let toDos = [];
-      toDos = getStorage();
-      console.log(e.target.checked);
+    //   toDos = getStorage();
+    let toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
 
-      if ((e.target.checked = true)) {
+
+      if ((box.checked = true)) {
         toDos.forEach((obj) => {
           if (e.target.classList.contains(obj.index)) {
             obj.completed = true;
+            // e.target.checked = true;
             localStorage.setItem("toDos", JSON.stringify(toDos));
           }
         });

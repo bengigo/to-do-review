@@ -79,6 +79,8 @@ input:checked + .editable {
   text-decoration: line-through;
 }
 
+
+
 ul {
   background-color: white;
 }
